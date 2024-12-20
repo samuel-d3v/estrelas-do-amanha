@@ -12,6 +12,107 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <p>teste</p>
+  <div id="app">
+    <main>
+      <div class="main-container">
+        <section>
+            <button type="submit" id="back">
+              <a href="#">
+                <img src="assets/icons/arrow-left-02.svg" alt="Seta para a esquerda">
+
+                <p>
+                  Voltar
+                </p>
+              </a>
+            </button>
+
+          <div class="header">
+            <h1>
+              Formulário de matrícula
+            </h1>
+
+            <p>
+              Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
+            </p>
+          </div>
+        </section>
+        
+        <form action="">
+          <fieldset>
+            <p for="" class="subtitle-form">
+              Informações da criança
+            </p>  
+          
+            <div class="form-control">
+              <label for="">
+                Nome completo
+              </label>
+              
+              <input type="text" placeholder="Maria Luiza Alves">
+            </div>
+
+            <div class="form-control">
+              <label for="">
+                Data de nascimento
+              </label>
+              
+              <input type="date" placeholder="06/05/2019">
+            </div>
+
+            <div class="form-control">
+              <label for="">
+                Sexo
+              </label>
+              
+              <select name="Sexo" id="">
+                <option value="Feminino">
+                  Feminino
+                </option>
+
+                <option value="Masculino">
+                  Masculino
+                </option>
+              </select>
+            </div>
+
+            <div class="form-control">
+              <label for="informações">
+                Informações médicas
+              </label>
+              
+              <input type="text" id="informações" placeholder="Ela tem alergia a glúten">
+            </div>
+
+           <div class="form-control">
+              <label for="file">
+                Certidão de nascimento
+              </label>
+
+              <input type="file" name="file" id="">
+            </div>
+          </fieldset>
+
+        </form>
+      </div>
+    </main>
+
+    <aside>
+      <div class="aside-container">
+        <div class="header">
+          <img src="assets/logo.svg" alt="Logo Estrelas do Amanhã">
+
+          <h1>
+            Porque cada momento de <span>aprendizado</span> conta
+          </h1>
+
+          <p>
+            Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.
+          </p>
+        </div>
+
+        <img src="assets/illustration.svg" alt="Imagem de uma professora ensinando a 4 crianças">
+      </div>
+    </aside>
+  </div>
 </body>
 </html>
