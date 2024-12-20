@@ -9,6 +9,10 @@
   font-size: 62.5%;
 
   /* Cores */
+  --brand-light: #F67841;
+  --brand-mid: #F3541C;
+  --brand-dark: #E43A12;
+
   --text-primary:#292524;
   --text-secondary:#57534E;
   --text-tertiary:#8F8881;
@@ -24,7 +28,12 @@
 
   /* Tipografia */
   --font-family: "Poppins", serif;
-  --text-sm: 400 1.4rem/1.4 var(--font-family) var(--text-secondary);
-  --text: 500 1.6rem/1.5 var(--font-family) var(--text-primary);
-  --text-lg: 500 2.4rem/1.5 var(--font-family) var(--text-primary);
+  --text-sm: 400 1.4rem/1.4 var(--font-family);
+  --text: 500 1.6rem/1.5 var(--font-family);
+  --text-lg: 500 2.4rem/1.5 var(--font-family);
+  
+}
+
+body {
+  overflow: hidden;
 }

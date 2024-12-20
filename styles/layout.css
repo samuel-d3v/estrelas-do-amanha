@@ -1,0 +1,103 @@
+#app {
+  display: grid;
+  grid-template-columns: 51.25% 48.75%;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  overflow: auto;
+
+  padding: 6.4rem;
+
+  .main-container {
+    display: grid ;
+    gap: 4.8rem;
+  }
+
+  button {
+    margin-bottom: 2.4rem;
+    border: none;
+
+    a {
+      display: flex;
+      gap: .8rem;
+
+      background-color: var(--surface-primary);
+      text-decoration: none;
+
+
+    }
+    
+    p {
+      font: var(--text);
+      color: var(--text-secondary);
+    }
+  }
+}
+
+fieldset {
+  display: grid;
+  gap: 2.4rem; 
+
+  border: none;
+  .form-control {
+    display: grid;
+    gap: .4rem;
+  }
+  
+  label {
+    font: var(--text-sm);
+    color: var(--text-secondary);
+  }
+
+  input:focus-visible {
+    border: .2rem solid var(--stroke-highlight);
+  }
+}
+
+input,
+ select {
+  padding: 1.2rem 1.6rem;
+
+  border-radius: .8rem;
+}
+
+#back {
+
+  
+}
+
+.subtitle-form {
+  font: var(--text);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+aside {
+  padding: 6.4rem;
+  background-color: #FEE7D6;
+
+  .aside-container {
+    display: grid ;
+    gap: 3.2rem;
+  }
+}
+
+.header {
+  display: grid;
+  gap: .8rem;
+  
+  h1 {
+    font: var(--text-lg);
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+
+  p {
+    font: var(--text);
+    color: var(--text-secondary);
+  }
+}
+
