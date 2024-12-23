@@ -28,12 +28,61 @@
 
   /* Tipografia */
   --font-family: "Poppins", serif;
-  --text-sm: 400 1.4rem/1.4 var(--font-family);
+  --text-sm: 500 1.4rem/1.4 var(--font-family);
   --text: 500 1.6rem/1.5 var(--font-family);
-  --text-lg: 500 2.4rem/1.5 var(--font-family);
+  --text-lg: 600 2.4rem/1.25 var(--font-family);
   
 }
 
 body {
   overflow: hidden;
 }
+
+#app {
+  display: grid;
+  grid-template-columns: 51.25% 48.75%;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  display: grid;
+  gap: .8rem;
+  
+  & h1, h2 {
+    font: var(--text-lg);
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+
+  & p {
+    font: var(--text);
+    color: var(--text-secondary);
+  }
+}
+
+@media (max-width:768) {
+  :root {
+    font-size: 1px;
+
+    #app {
+      display: grid;
+      grid-template-columns: 51.25% 48.75%;
+    
+      height: 100vh;
+      overflow: hidden;
+    }
+  }
+}
+
+  @media (max-height: 653px) {
+    :root {
+      font-size: 50%;
+    }
+  }
