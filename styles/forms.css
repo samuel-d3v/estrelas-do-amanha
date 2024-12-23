@@ -1,0 +1,14 @@
+@import url(fields/index.css);
+
+fieldset {
+  display: grid;
+  gap: 2.4rem; 
+
+  border: none;
+
+  & .subtitle-form {
+    font: var(--text);
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+}
