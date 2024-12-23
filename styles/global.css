@@ -31,7 +31,6 @@
   --text-sm: 500 1.4rem/1.4 var(--font-family);
   --text: 500 1.6rem/1.5 var(--font-family);
   --text-lg: 600 2.4rem/1.25 var(--font-family);
-  
 }
 
 body {
@@ -79,10 +78,10 @@ img {
       overflow: hidden;
     }
   }
-}
+} 
 
-  @media (max-height: 653px) {
-    :root {
-      font-size: 50%;
-    }
+@media (max-height: 653px) {
+  :root {
+    font-size: 50%;
   }
+}
