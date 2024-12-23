@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,6 @@
             <button type="submit" id="back">
               <a href="#">
                 <img src="assets/icons/arrow-left-02.svg" alt="Seta para a esquerda">
-
                 <p>
                   Voltar
                 </p>
@@ -30,65 +29,75 @@
             <h1>
               Formulário de matrícula
             </h1>
-
             <p>
               Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
             </p>
           </div>
         </section>
         
-        <form action="">
-          <fieldset>
-            <p for="" class="subtitle-form">
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="child-info">
+            <legend class="subtitle-form">
               Informações da criança
-            </p>  
+            </legend>  
           
-            <div class="form-control">
-              <label for="">
+            <div class="input-wrapper">
+              <label for="fullname">
                 Nome completo
-              </label>
-              
-              <input type="text" placeholder="Maria Luiza Alves">
+              </label>             
+              <input 
+                id="fullname"
+                name="fullname"
+                type="text" 
+                placeholder="Maria Luiza Alves">
             </div>
 
-            <div class="form-control">
-              <label for="">
+            <div class="input-wrapper">
+              <label for="birth">
                 Data de nascimento
-              </label>
-              
-              <input type="date" placeholder="06/05/2019">
+              </label>              
+              <input 
+                id="birth"
+                name="birth"
+                type="date" 
+                placeholder="06/05/2019"
+                lang="pt-BR">
             </div>
 
-            <div class="form-control">
-              <label for="">
+            <div class="select-wrapper">
+              <label for="gender">
                 Sexo
               </label>
-              
-              <select name="Sexo" id="">
-                <option value="Feminino">
+              <select name="Sexo" id="gender" name="gender">
+                <option value="female">
                   Feminino
                 </option>
-
-                <option value="Masculino">
+                <option value="male">
                   Masculino
+                </option>
+                <option value="na">
+                  Prefiro não responder
                 </option>
               </select>
             </div>
 
-            <div class="form-control">
-              <label for="informações">
+            <div class="textarea-wrapper">
+              <label for="medical-info">
                 Informações médicas
               </label>
-              
-              <input type="text" id="informações" placeholder="Ela tem alergia a glúten">
+              <textarea id="medical-info" name="medical-info" type="text" placeholder="Ela tem alergia a glúten" cols="30" rows="10"></textarea>
             </div>
 
-           <div class="form-control">
+           <div class="droparea-wrapper">
               <label for="file">
                 Certidão de nascimento
               </label>
-
-              <input type="file" name="file" id="">
+              <input type="file" name="birth-file" id="birth-file">
+              <img src="assets/icons/cloud-upload.svg" alt="">
+              <p>
+                Click aqui para <br>
+                selecionar os arquivos 
+              </p>
             </div>
           </fieldset>
 
